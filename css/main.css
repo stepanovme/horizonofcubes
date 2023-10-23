@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
+    color: #ffffff;
 }
 
 body{
@@ -19,16 +20,28 @@ a{
     text-decoration: none;
     color: #ffffff;
     font-size: 1rem;
+    transition: .3s;
 }
 
 a:hover{
     color: #FF48F5;
+    transition: .3s;
 }
 
 /* Header */
 header{
     position: relative;
     padding: 0 2rem;
+    border-bottom: 2px solid #1F1F25;
+}
+
+.leftheader {
+    display: flex;
+}
+
+.rightheader{
+    display: flex;
+    gap: 1rem;
 }
 
 .navbar{
@@ -41,6 +54,12 @@ header{
     justify-content: space-around;
 }
 
+
+
+.navbar .logo img {
+    display: flex;
+}
+
 .navbar .logo a{
     font-size: 1.5rem;
     font-weight: 700;
@@ -49,6 +68,8 @@ header{
 .navbar .links{
     display: flex;
     gap: 2rem;
+    align-items: center;
+    margin-left: 1.2rem;
 }
 
 .navbar .toggle_btn{
@@ -58,11 +79,11 @@ header{
     display: none;
 }
 
-.action-btn{
+a.action_btn{
     border-radius: 5px;
     background: linear-gradient(180deg, #FF48F5 0%, #C634BE 100%);
     box-shadow: 0px 0px 10px 0px rgba(255, 72, 245, 0.75);
-    padding: 0.5rem 1.4rem;
+    padding: 0.2rem 1.6rem;
     border: none;
     outline: none;
     font-size: 0.8rem;
@@ -70,8 +91,12 @@ header{
     cursor: pointer;
 }
 
-.action-btn:hover{
+a.action_btn:hover{
     scale: 1.05;
     color: #ffffff;
     transition: 0.3s;
+}
+
+a.active{
+    color: #FF48F5;
 }

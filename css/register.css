@@ -1,0 +1,80 @@
+h1 {
+    text-align: center;
+}
+
+input{
+    border-radius: 11px;
+    background: #1F1F25;
+    border: 0;
+    height: 35px;
+    padding-left: 13px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+button{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 197px;
+    height: 36px;
+    border-radius: 6px;
+    border: 0;
+    background: #26262D;
+    margin-top: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #393940;
+    transition: .3s;
+}
+
+input::placeholder{
+    font-size: 16px;
+    font-weight: 500;
+    color: #4F4F56;
+}
+
+.register{
+    position: relative;
+    top: 50%;
+    transform: translate(0, 50%);
+}
+
+.register form input{
+    width: 100%;
+}
+
+.inputBox{
+    position: relative;
+    margin-top: 22px;
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding-left: 13px;
+    padding-top: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4F4F56;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+    color: #858585;
+    transform: translateY(-15px);
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.inputBox:nth-child(1){
+    margin-top: 29px;
+}
