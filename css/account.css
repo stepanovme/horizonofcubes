@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.account{
+    position: relative;
+    margin-top: 60px;
+}
+
+.blank{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    width: 100%;
+    height: 51px;
+    border-radius: 11px;
+    background: #1F1F25;
+    padding-right: 11px;
+    padding-left: 20px;
+}
+
+
+.blank p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blank_btn {
+    width: 91px;
+    height: 29px;
+    border-radius: 8px;
+    border: 1px solid #28282F;
+    background: #26262D;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.font-table .title{
+    margin-top: -3px;
+    color: #9C98A0;
+    font-size: 14px;
+    font-weight: 500;
+}
