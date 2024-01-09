@@ -100,3 +100,52 @@ a.action_btn:hover{
 a.active{
     color: #FF48F5;
 }
+
+.icons{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+label.icons{
+    font-size: 45px;
+}
+
+.subheader{
+    display: none;
+}
+
+@media (max-width: 880px) {
+
+    .navbar .links {
+        display: none;
+    }
+    a.light-mode{
+        display: none;
+    }
+    a.discord-link{
+        display: none;
+    }
+    a.action_btn{
+        display: none;
+    }
+
+    .subheader{
+        background-color: #15151B;
+        text-align: center;
+    }
+
+    .links li {
+        padding-top: 10px;
+    }
+
+    .links li a{
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 881px) {
+    label.icons{
+        display: none;
+    }
+}
+
